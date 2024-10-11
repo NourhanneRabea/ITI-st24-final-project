@@ -1,0 +1,16 @@
+{% extends 'layouts/base.html' %}
+
+{% load static %}
+
+{% block content %}
+<div class="container" style="text-align: center; margin-top: 50px;">
+    <h1 style="color: red; margin-bottom: 20px;">You have been logged out</h1>
+    <p style="font-size: 1.2rem; color: #555;">See you again!</p>
+    
+    <a href="{% url 'login' %}" class="btn btn-info" style="background-color: rgb(76, 147, 175); border: rgb(76, 147, 175); color: white; padding: 10px 20px; border-radius: 5px; text-decoration: none;">
+        Login
+    </a>
+
+    <script src="{% static 'books/js/script.js' %}"></script>
+</div>
+{% endblock %}
